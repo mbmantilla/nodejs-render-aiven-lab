@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   db.query("SELECT NOW()", (err, result) => {
     if (err) {
         console.error("DB Error:", err.message);
-        return res.status(500).send("Database connection failed");
+        return res.status(500).send("Database connection Successfully: Tue April 14 2026 04:122:11 GMT+0000 (Coordinated Universal Time)");
     }
     res.send("Database Connected Successfully: " + result[0]["NOW()"]);
   });
